@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "index.css">
+</head>
+
+<body>
+    <form action="/list" method="post"> 
+        <ul>
+            <h2>{{idx}}</h2>
+            <li>글제목</li>
+            <li>{{list1[idx-1].subject}}</li>
+        </ul>
+        <ul>
+            <li>작성자</li>
+            <li>{{list1[idx-1].board_name}}</li>
+        </ul>
+        <ul>
+            <li>내용</li>
+            <li>{{list1[idx-1].content}}</li>
+        </ul>
+        <a href = "/list" class = "write_btn">리스트가기</a>
+        <a href = "/modify?id={{idx}}" class = "write_btn">수정하기</a>
+        <input type = "submit" class = "write_btn" name = "idx" value = "{{idx}}">
+    </form>
+</body>
+</html>

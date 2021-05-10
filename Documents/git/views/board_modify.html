@@ -1,0 +1,31 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/modify" method="post"> 
+        <h2>게시판 글수정 페이지 입니다</h2>
+        <input type = "text" value = "{{idx2+1}}" name = "idx2">
+        <ul>
+            <li>글제목</li>
+            <li><input type = "text" value = "{{list2[idx2].subject}}" name = "mboard_subject"></li>
+        </ul>
+        <ul>
+            <li>작성자</li>
+            <li><input type = "text" value = "{{list2[idx2].board_name}}"  name = "mboard_name"></li>
+        </ul>
+        <ul>
+            <li>
+                <textarea name = "mboard_content">{{list2[idx2].content}}</textarea>
+            </li>
+        </ul>
+        <input type = "submit" value = "글쓰기" class = "write_btn">
+        <a href = "/list">글목록</a>
+    </form>  
+</body>
+</html>
