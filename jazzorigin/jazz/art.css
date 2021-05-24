@@ -1,0 +1,269 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.menufixed{
+    position: fixed;
+    top:10%;
+}
+.menufixed>ul>li{
+    transform: rotate( -90deg );
+    margin-top: 100px;
+    font-family: "notokr", HelveticaNeue-Light, AppleSDGothicNeo-Light, sans-serif, dotum;
+    font-weight: bold;
+}
+
+.menufixed>ul>li>a{
+    color: black;
+}
+
+.c{
+    width:1200px;
+    margin: 0 auto;
+}
+
+.limage{
+    display: inline-block;
+    float: left;
+}
+.cimage{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.rimage{
+    display: inline-block;
+    float: right;
+}
+
+.menuwrap{
+    clear: both;
+}
+
+.menuc>li{
+    display: inline-block;
+    margin-left: 52px;
+    margin-right: 40px;
+    font-family: "notokr", HelveticaNeue-Light, AppleSDGothicNeo-Light, sans-serif,
+    dotum;
+    font-weight: bold;
+    color: #4a4a4a;;
+}
+
+.menuc>li:hover{
+    color:palevioletred;
+}
+
+.bannerc>img{
+    width:1200px;
+}
+
+
+.noticec{
+    width:100%;
+}
+
+.noticel{
+    display: inline-block;
+    float: left;
+    width:50%;
+    
+}
+.noticel>img{
+    display: inline-block;
+    float: right;
+    width:50%;
+    margin-right: 50px;
+    height:530px;
+}
+
+.noticer{
+    display: inline-block;
+    float:right;
+    width:50%;
+    margin-bottom: 140px;
+    
+}
+.noticerl{
+    display: inline-block;
+    float: left;
+}
+.noticerl>ul{
+    clear:both;
+}
+
+.noticerl>ul>li{
+    line-height: 30px;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+.noticeh{
+    margin-top:220px;
+    width:800px;
+    font-family: 'Nanum Gothic Coding', monospace;
+
+}
+.hl{
+    display: inline-block;
+    float: left;
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+.hr{
+    display: inline-block;
+    float: right;
+    width:35px;
+    height:35px;
+    text-align: center;
+    box-sizing: border-box;
+    padding:8px;
+    background: #ffc230;
+    color: white;
+}
+.music_facebookc{
+    clear: both;
+    height:600px;
+}
+
+.music{
+    float: left;
+    display: inline-block;
+}
+.music{
+    margin-left:170px;
+    width:150px;
+    height:50px;
+    background: #ffc230;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    padding:10px;
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: "notokr", HelveticaNeue-Light, AppleSDGothicNeo-Light, sans-serif, dotum;
+}
+
+.facebook{
+    margin-right:170px;
+    width:200px;
+    height:50px;
+    text-align: center;
+    background: #241975;
+    color: white;
+    box-sizing: border-box;
+    padding:10px;
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: "notokr", HelveticaNeue-Light, AppleSDGothicNeo-Light, sans-serif, dotum;
+}
+
+.music_facebookc>div>iframe{
+    width:480px;
+    height:500px;
+    overflow: scroll;
+    margin-top: 150px;
+    float: right;
+}
+.facebook{
+    float: right;
+    display: inline-block;
+}
+.videoc{  
+    margin-top: 300px;
+    margin-bottom: 500px;
+}
+.videoc>div{
+    width:150px;
+    height:50px;
+    background: black;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    padding:13px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: "notokr", HelveticaNeue-Light, AppleSDGothicNeo-Light, sans-serif, dotum;
+    font-weight: bold;
+    margin-left:50%;
+    transform: translateX(-50%);
+    margin-bottom: 130px;
+}
+
+#videowrap{
+    clear: both;
+    height:900px;
+}
+
+.videoc>ul>li{
+    display: inline-block;
+}
+.videoc>ul>li>video{
+    width:395px;
+    height:300px;
+}
+
+.line{
+    width:100%;
+    height:5px;
+    color:grey;
+}
+
+.footertextc{
+    width:800px;
+    margin: 0 auto;
+}
+
+.footerlogoc>li{
+    display: inline-block;
+}
+.footerlogoc>li>img{
+    width:130px;
+    height: 50px;
+
+}
+.footertextc>ul{
+    clear: both;
+}
+.ul2{
+    margin-left: 100px;
+    color: #222;
+}
+.ul5{
+    margin-left: 180px;
+}
+.ul3{
+    margin-left: 50px;
+}
+.ul4{
+    margin-left: 170px;
+    margin-top: 90px;
+}
+.ul2>li,.ul3>li,.ul4>li{
+    color: #4a4a4a;
+    font-weight: bold;
+    opacity: 60%;
+}
+.footertextc>ul>li{
+    display: inline-block;
+    float: left;
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.footertextc>div{
+    clear: both;
+    margin-top: 40px;
+}

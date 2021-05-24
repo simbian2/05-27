@@ -1,0 +1,448 @@
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contentswrap{
+    height: 7300px;
+    position: relative;
+    z-index:1;
+}
+
+.wrap{
+    width:100%;
+}
+
+.headerwrap{
+    width: 100%;
+    height:85px;
+    border: 1px solid black;
+    background: white;
+}
+.c{
+    width:1200px;
+    margin:0 auto;
+}
+.adveritsec{
+    height:100px;
+}
+.adimg{
+    display: inline-block;
+    float: left;
+    margin-top: 20px;
+}
+.adtext{
+    display: inline-block;
+    clear: both;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.adtext>div{
+    margin-bottom: 15px;
+}
+.adimg>img{
+    width:60px;
+    height:60px;
+}
+.adremove{
+    display: inline-block;
+    margin-top: 20px;
+    width:50px;
+    height:50px;
+    border:1px solid black;
+    border-radius: 25px;
+    display: inline-block;
+    float: right;
+}
+.hcl{
+    margin-top: 23px;
+    display: inline-block;
+    float: left;
+}
+.hcl>img{
+    width:150px;
+}
+.hcc{
+    margin-top: 25px;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+.namelist{
+    position: absolute;
+    top:160px;
+    left:50%;
+    transform: translateX(-55%);
+    width:200px;
+    background: white;
+    border:1px solid black;
+    z-index: 7;
+    line-height: 30px;
+    display: none;
+}
+.listblock{
+    position: absolute;
+    top:160px;
+    left:50%;
+    transform: translateX(-55%);
+    width:200px;
+    background: white;
+    border:1px solid black;
+    z-index: 7;
+    line-height: 30px;
+}
+
+.hcr{
+    margin-top: 17px;
+    display: inline-block;
+    float: right;
+}
+.div{
+    width:220px;
+    height:30px;
+}
+
+.text{
+    height:30px;
+    width:200px;
+    display: inline-block;
+    float: left;
+}
+
+.button{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    border:1px solid black;
+    height:34px;
+    width:25px;
+    box-sizing: border-box;
+    padding: 4px;
+}
+
+
+
+.twocontent{
+    width:800px;
+    z-index:1;
+    position: absolute;
+    display: inline-block;
+    float: left;
+}
+.contentsc{
+    position: absolute;
+    z-index:5;
+    left:50%;
+    transform: translateX(-50%);
+}
+.contentsr{
+    position: sticky;
+    top:0px;
+    width:400px;
+    display: inline-block;
+    float: right;
+}
+.my{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.my>div{
+    display: inline-block;
+}
+
+.myl{
+    float:left;
+}
+.myc{
+    margin-top: 10px;
+    margin-left: 18px;
+}
+
+.myr{
+    float: right;
+    margin-top: 30px;
+    color: #0095f6;
+    font-weight: bold;
+}
+
+.your{
+    clear: both;
+    height:500px;
+}
+
+.yourheader>div{
+    display: inline-block;
+    font-size: 18px;
+}
+.g{
+    font-weight: bold;
+    color: grey;
+}
+
+.yr{
+    float: right;
+    font-weight: bold;
+}
+
+.yourcontents{
+    margin-top: 40px;
+}
+.yourcontents>li{
+    clear: both;
+}
+
+.yourcontents>li>div>img{
+    width:60px;
+    height:60px;
+}
+
+.yourcontents>li>div{
+    display: inline-block;
+}
+.foryou{
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.d>span{
+    color:gray;
+}
+.d{
+    margin-top:18px;
+    margin-left: 7px;
+}
+.d>div{
+    font-weight: bold;
+}
+.p{
+    font-weight: bold;
+}
+.follow{
+    float: right;
+    margin-top: 27px;
+    color: #0095f6;
+    font-weight: bold;
+}
+.footer{
+    clear: both; 
+}
+
+.footer>ul>li{
+    display: inline-block;
+    margin-top: 15px;
+    color:grey;
+}
+
+.footer>div{
+    margin-top: 15px;
+    color:grey;
+}
+
+.contentsl{
+    margin-top: 55px;
+    width:765px;
+    height:120px;
+    box-sizing: border-box;
+    padding:20px;
+    border: 1px solid #232323;
+    overflow: hidden;
+    
+}
+.upcontentsl{
+    width:1400px;
+    height:130px;
+}
+.upcontentsl>li{
+    display: inline-block;
+}
+
+.downcontentsr{
+    width:763px;
+    height:1800px;
+    margin-top: 80px;
+    border: 1px solid black;
+}
+.downcontentsr1{
+    width:763px;
+    height:1620px;
+    margin-top: 80px;
+    border: 1px solid black;
+}
+.downcontentsr2{
+    width:763px;
+    height:2010px;
+    margin-top: 80px;
+    border: 1px solid black;
+}
+
+.downcontentsr3{
+    width:763px;
+    height:1220px;
+    margin-top: 80px;
+    border: 1px solid black;
+}
+
+
+.winter{
+    box-sizing: border-box;
+    padding:20px;
+    position: relative;
+}
+.left{
+    display: inline-block;
+}
+
+.right{
+    display: inline-block;
+    float: right;
+}
+.right>img{
+    height:35px;
+}
+.wb{
+    position: absolute;
+    width:50px;
+    height:50px;
+    border: 1px solid white;
+    border-radius: 25px;
+    right:70px;
+    top:520px;
+}
+.ib{
+    position: absolute;
+    z-index: 3;
+    width:50px;
+    height:50px;
+    top:90px;
+    border: 1px solid white;
+    border-radius: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    padding:15px;
+    left:680px;
+}
+
+.winterimg>img{
+    width:720px;
+    margin-top:30px;
+}
+
+.imgwrap{
+    width: 720px;
+    overflow: hidden;
+}
+.winterimg1{
+    width:2000px;
+}
+
+.winterimg1>li>img{
+    width:720px;
+    margin-top:30px;
+}
+.winterimg1>li{
+    display: inline-block;
+    animation: winter 1s;
+}
+
+@keyframes winter{
+    from{
+        width:770px;
+    }
+    to{
+        width:0px;
+    }
+}
+.winterimg2>img{
+    width:720px;
+    margin-top:30px;
+}
+.iconl{
+    margin-top: 10px;
+    display: inline-block;
+    float: left;
+}
+.iconr{
+    margin-top: 10px;
+    display: inline-block;
+    float:right;
+}
+.clear{
+    clear: both;
+}
+
+.wtextup{
+    margin-top: 10px;
+}
+
+.wtextup>ul{
+    display: inline-block;
+    margin-left:20px;
+}
+.wtextup>ul>li{
+    display: inline-block;
+}
+
+.wtextor{
+    margin-top:20px;
+    line-height: 25px;
+}
+
+.wfootertext>div{
+    margin-top: 9px;
+    font-size: 13px;
+    color: grey;
+}
+
+
+.box, .box_2, .box_3, .box_4{
+ width:720px;
+ box-sizing: border-box;
+ padding:10px;
+}
+.box1, .box3, .box5, .box7{
+    display: inline-block;
+    float: left;
+    width:620px;
+    height:32px;
+}
+.box2, .box4, .box6, .box8{
+    display: inline-block;
+    text-align: center;
+    border:1px solid black;
+    width:50px;
+    height:34px;
+}
+.box2>div, .box4>div, .box6>div, .box8>div{
+    margin-top: 6px;
+}
+
+.plus>div, .plus2>div, .plus3>div, .plus4>div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.plus, .plus2, .plus3, .plus4{
+    height:300px;
+    overflow: scroll;
+}
+
+.plus>li, .plus2>li, .plus3>li, .plus4>li{
+    line-height: 35px;
+}
+
+.winter{
+    margin-bottom: 50px;
+}
+
+.red{
+    color: red;
+}
+.black{
+    color: black;
+}
