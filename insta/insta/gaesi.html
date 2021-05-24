@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "index.css">
+</head>
+<body>
+    <form action="/write" method="post"> 
+        <h2>게시판 글쓰기 페이지 입니다</h2>
+        <ul>
+            <li>글제목</li>
+            <li><input type = "text" name = "board_subject"></li>
+        </ul>
+        <ul>
+            <li>작성자</li>
+            <li><input type = "text" name = "board_name"></li>
+        </ul>
+        <ul>
+            <li>
+                <textarea name = "board_content"></textarea>
+            </li>
+        </ul>
+        <input type = "submit" value = "글쓰기" class = "write_btn">
+        <a href = "/list">글목록</a>
+    </form>  
+</body>
+</html>
+ 
+ 
+ 
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/modify" method="post"> 
+        <h2>게시판 글수정 페이지 입니다</h2>
+        <input type = "text" value = "{{idx2+1}}" name = "idx2">
+        <ul>
+            <li>글제목</li>
+            <li><input type = "text" value = "{{list2[idx2].subject}}" name = "mboard_subject"></li>
+        </ul>
+        <ul>
+            <li>작성자</li>
+            <li><input type = "text" value = "{{list2[idx2].board_name}}"  name = "mboard_name"></li>
+        </ul>
+        <ul>
+            <li>
+                <textarea name = "mboard_content">{{list2[idx2].content}}</textarea>
+            </li>
+        </ul>
+        <input type = "submit" value = "글쓰기" class = "write_btn">
+        <a href = "/list">글목록</a>
+    </form>  
+</body>
+</html>
+ 
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "index.css">
+</head>
+
+<body>
+    <form action="/list" method="post"> 
+        <ul>
+            <h2>{{idx}}</h2>
+            <li>글제목</li>
+            <li>{{list1[idx-1].subject}}</li>
+        </ul>
+        <ul>
+            <li>작성자</li>
+            <li>{{list1[idx-1].board_name}}</li>
+        </ul>
+        <ul>
+            <li>내용</li>
+            <li>{{list1[idx-1].content}}</li>
+        </ul>
+        <a href = "/list" class = "write_btn">리스트가기</a>
+        <a href = "/modify?id={{idx}}" class = "write_btn">수정하기</a>
+        <input type = "submit" class = "write_btn" name = "idx" value = "{{idx}}">
+    </form>
+</body>
+</html>
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "index.css">
+</head>
+<body>
+    <h2><div>게시판 리스트입니다</div></h2>
+    <div class = "board">
+        <table>
+            <tr>
+                <td>번호</td>
+                <td>제목</td>
+                <td>작성자</td>
+                <td>날짜</td>
+                <td>조회수</td>
+            </tr>
+            {% for item in list %}
+            <tr>
+            <td>{{item.idx}}</td>
+            <td><a href = "/view?id={{item.idx}}">{{item.subject}}</a></td>
+            <td>{{item.board_name}}</td>
+            <td>{{item.today}}</td>
+            <td>{{item.hit}}</td>                
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <a href = "/write" class = "write_btn">글쓰기</a>
+</body>
+</html>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "index.css">
+</head>
+<body>
+    <form action="/write" method="post"> 
+        <h2>게시판 글쓰기 페이지 입니다</h2>
+        <ul>
+            <li>글제목</li>
+            <li><input type = "text" name = "board_subject"></li>
+        </ul>
+        <ul>
+            <li>작성자</li>
+            <li><input type = "text" name = "board_name"></li>
+        </ul>
+        <ul>
+            <li>
+                <textarea name = "board_content"></textarea>
+            </li>
+        </ul>
+        <input type = "submit" value = "글쓰기" class = "write_btn">
+        <a href = "/list">글목록</a>
+    </form>  
+</body>
+</html>
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/modify" method="post"> 
+        <h2>게시판 글수정 페이지 입니다</h2>
+        <input type = "text" value = "{{idx2+1}}" name = "idx2">
+        <ul>
+            <li>글제목</li>
+            <li><input type = "text" value = "{{list2[idx2].subject}}" name = "mboard_subject"></li>
+        </ul>
+        <ul>
+            <li>작성자</li>
+            <li><input type = "text" value = "{{list2[idx2].board_name}}"  name = "mboard_name"></li>
+        </ul>
+        <ul>
+            <li>
+                <textarea name = "mboard_content">{{list2[idx2].content}}</textarea>
+            </li>
+        </ul>
+        <input type = "submit" value = "글쓰기" class = "write_btn">
+        <a href = "/list">글목록</a>
+    </form>  
+</body>
+</html>
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "index.css">
+</head>
+
+<body>
+<form action="/list" method="post"> 
+        <ul>
+            <h2>{{idx}}</h2>
+            <li>글제목</li>
+            <li>{{list1[idx-1].subject}}</li>
+        </ul>
+        <ul>
+            <li>작성자</li>
+            <li>{{list1[idx-1].board_name}}</li>
+        </ul>
+        <ul>
+            <li>내용</li>
+            <li>{{list1[idx-1].content}}</li>
+        </ul>
+        <a href = "/list" class = "write_btn">리스트가기</a>
+        <a href = "/modify?id={{idx}}" class = "write_btn">수정하기</a>
+        <input type = "submit" class = "write_btn" name = "idx" value = "{{idx}}">
+    </form>
+</body>
+</html>
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "index.css">
+</head>
+<body>
+    <h2><div>게시판 리스트입니다</div></h2>
+    <div class = "board">
+        <table>
+            <tr>
+                <td>번호</td>
+                <td>제목</td>
+                <td>작성자</td>
+                <td>날짜</td>
+                <td>조회수</td>
+            </tr>
+            {% for item in list %}
+            <tr>
+            <td>{{item.idx}}</td>
+            <td><a href = "/view?id={{item.idx}}">{{item.subject}}</a></td>
+            <td>{{item.board_name}}</td>
+            <td>{{item.today}}</td>
+            <td>{{item.hit}}</td>                
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <a href = "/write" class = "write_btn">글쓰기</a>
+</body>
+</html>
